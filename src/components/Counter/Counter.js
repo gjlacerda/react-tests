@@ -22,12 +22,12 @@ class Counter extends Component {
           <button 
           className="increment"
           onClick={this.increment}>
-            Increment count
+            +++
           </button>
           <button
           className="decrement"
           onClick={this.decrement}>
-            Decrement count
+            ---
           </button>
         </React.Fragment>
     )
