@@ -8,4 +8,20 @@ describe('Counter component', () => {
     const text = wrapper.find('p').text()
     expect(text).toEqual('Current count: 0')
   })
+
+  it('increments the count when the button is clicked', () => {
+    const wrapper = shallow(<Counter/>)
+    const button = wrapper.find('button.increment')
+    button.simulate('click')
+    const text = wrapper.find('p').text()
+    expect(text).toEqual('Current count: 1')
+  })
+
+  it('decrements the count when the decrement button is clicked', () => {
+    const wrapper = shallow(<Counter/>)
+    const decrementButton = wrapper.find('button.decrement')
+    decrementButton.simulate('click')
+    const text = wrapper.find('p').text()
+    expect(text).toEqual('Current count: -1')
+  })
 })
