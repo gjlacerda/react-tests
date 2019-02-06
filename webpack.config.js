@@ -25,5 +25,11 @@ module.exports = {
   devServer: {
     publicPath: '/',
     contentBase: './dist',
+  },
+  resolve: {
+    modules: [
+      'src',
+      'node_modules'
+    ]
   }
 }
