@@ -17,19 +17,19 @@ class Counter extends Component {
 
   render() {
     return (
-        <React.Fragment>
-          <p>Current count: {this.state.count}</p>
-          <button 
-          className="increment"
-          onClick={this.increment}>
-            +++
-          </button>
-          <button
-          className="decrement"
-          onClick={this.decrement}>
-            ---
-          </button>
-        </React.Fragment>
+      <React.Fragment>
+        <p>Current count: {this.state.count}</p>
+        <button 
+        className="increment"
+        onClick={this.increment}>
+          +++
+        </button>
+        <button
+        className="decrement"
+        onClick={this.decrement}>
+          ---
+        </button>
+      </React.Fragment>
     )
   }
 }
