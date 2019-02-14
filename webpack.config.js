@@ -20,7 +20,7 @@ module.exports = {
             loader: "style-loader"
           },
           {
-            loader: "raw-loader"
+            loader: "css-loader"
           }
         ]
       },
