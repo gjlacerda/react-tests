@@ -12,14 +12,6 @@ module.exports = {
           loader: "babel-loader"
         }
       },
-      {
-        test: /\.html$/,
-        use: [
-          {
-            loader: "html-loader"
-          }
-        ]
-      }
     ]
   },
   devServer: {
