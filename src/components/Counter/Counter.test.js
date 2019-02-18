@@ -11,7 +11,7 @@ describe('Counter component', () => {
   
   it('starts with a count of 0', () => {
     const wrapper = shallow(<Counter/>)
-    const text = wrapper.find('p').text()
+    const text = wrapper.find('Paragraph').text()
     expect(text).toEqual('Current count: 0')
   })
 
@@ -19,7 +19,7 @@ describe('Counter component', () => {
     const wrapper = shallow(<Counter/>)
     const button = wrapper.find('button.increment')
     button.simulate('click')
-    const text = wrapper.find('p').text()
+    const text = wrapper.find('Paragraph').text()
     expect(text).toEqual('Current count: 1')
   })
 
@@ -27,7 +27,7 @@ describe('Counter component', () => {
     const wrapper = shallow(<Counter/>)
     const decrementButton = wrapper.find('button.decrement')
     decrementButton.simulate('click')
-    const text = wrapper.find('p').text()
+    const text = wrapper.find('Paragraph').text()
     expect(text).toEqual('Current count: -1')
   })
 })

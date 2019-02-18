@@ -1,5 +1,10 @@
 import styled from 'styled-components'
 
-export const Paragraph = styled.p`
+const Paragraph = styled.p`
   color: #333;
 `
+Paragraph.displayName = 'Paragraph'
+
+export {
+  Paragraph
+}
