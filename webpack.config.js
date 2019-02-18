@@ -29,6 +29,7 @@ module.exports = {
   plugins: [
     new HtmlPlugin({
       title: 'React Tests',
+      template: 'src/templates/index.html'
     })
   ]
 }

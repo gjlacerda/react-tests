@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import {Paragraph} from './counter.styled'
 
 class Counter extends Component {
   state = {
@@ -18,16 +19,16 @@ class Counter extends Component {
   render() {
     return (
       <React.Fragment>
-        <p>Current count: {this.state.count}</p>
+        <Paragraph>Current count: {this.state.count}</Paragraph>
         <button 
-        className="increment"
-        onClick={this.increment}>
-          +++
+          className="increment"
+          onClick={this.increment}>
+            +++
         </button>
         <button
-        className="decrement"
-        onClick={this.decrement}>
-          ---
+          className="decrement"
+          onClick={this.decrement}>
+            ---
         </button>
       </React.Fragment>
     )
