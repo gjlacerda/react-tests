@@ -1,7 +1,9 @@
+const HtmlPlugin = require('html-webpack-plugin')
+
 module.exports = {
   entry: "./src/index.js",
   output: {
-    filename: "bundle.js"
+    filename: "[name]-[hash].js"
   },
   module: {
     rules: [
@@ -11,19 +13,7 @@ module.exports = {
         use: {
           loader: "babel-loader"
         }
-      },
-      {
-        test: /\.css$/,
-        exclude: /node_modules/,
-        use: [
-          {
-            loader: "style-loader"
-          },
-          {
-            loader: "css-loader"
-          }
-        ]
-      },
+      }
     ]
   },
   devServer: {
@@ -35,5 +25,10 @@ module.exports = {
       'src',
       'node_modules'
     ]
-  }
+  },
+  plugins: [
+    new HtmlPlugin({
+      title: 'React Tests',
+    })
+  ]
 }
