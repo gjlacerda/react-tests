@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Home from 'app/Home'
+import Home from 'components/Home'
 
 ReactDOM.render(
   <Home/>,
