@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const Paragraph = styled.p`
-  color: #333;
+  color: red;
 `
 Paragraph.displayName = 'Paragraph'
 
