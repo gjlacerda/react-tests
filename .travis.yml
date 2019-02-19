@@ -11,3 +11,5 @@ deploy:
   app: react-tests
   on:
     repo: gjlacerda/react-tests
+after_success:
+  - yarn test:coverage
