@@ -4,5 +4,10 @@ node_js:
 cache:
   directories:
     - node_modules
-script:
-  - yarn test
+deploy:
+  provider: heroku
+  api_key:
+    secure: 88d08eca-dce9-4886-96e1-ba254e77604c
+  app: react-tests
+  on:
+    repo: gjlacerda/react-tests
