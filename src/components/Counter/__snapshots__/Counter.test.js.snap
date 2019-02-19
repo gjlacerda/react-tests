@@ -3,7 +3,7 @@
 exports[`Counter component matches the snapshot 1`] = `
 Array [
   <p
-    className="sc-bdVaJa dsMjwO"
+    className="sc-bdVaJa rOCEJ"
   >
     Current count: 
     0
