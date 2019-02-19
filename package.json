@@ -36,7 +36,7 @@
     "start": "node --experimental-modules src/server.mjs",
     "start:dev": "webpack-dev-server --mode development",
     "build": "webpack --mode production",
-    "test": "jest",
+    "test": "jest src",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "postinstall": "yarn build"
