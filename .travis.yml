@@ -11,6 +11,7 @@ deploy:
   app: react-tests
   on:
     repo: gjlacerda/react-tests
+script:
+  - yarn run cypress run
 after_success:
   - yarn test:coverage
-  - yarn run cypress run
