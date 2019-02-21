@@ -13,3 +13,4 @@ deploy:
     repo: gjlacerda/react-tests
 after_success:
   - yarn test:coverage
+  - yarn run cypress run
