@@ -11,7 +11,10 @@ deploy:
   app: react-tests
   on:
     repo: gjlacerda/react-tests
+before_script:
+  - yarn build
+  - yarn start 
 script:
-  - yarn run cypress run
+  - yarn run cypress run --record --key 06463f25-18d9-4517-8d6e-9c9ecd29a90a
 after_success:
   - yarn test:coverage
