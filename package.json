@@ -35,7 +35,7 @@
     "react-dom": "^16.8.0"
   },
   "scripts": {
-    "start": "node --experimental-modules src/server.mjs && wait-on http://localhost:8080",
+    "start": "nohup node src/server.js &",
     "start:dev": "webpack-dev-server --mode development",
     "build": "webpack --mode production",
     "test": "jest src",
